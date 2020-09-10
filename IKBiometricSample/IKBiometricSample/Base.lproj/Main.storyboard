@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-C1-Fef">
+                                <rect key="frame" x="206.5" y="452.5" width="1" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="Sbe-w9-Swp"/>
+                                    <constraint firstAttribute="height" constant="1" id="yNT-Ci-It5"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-L8-vOf">
+                                <rect key="frame" x="171" y="434" width="72" height="38"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="인증하기"/>
+                                <connections>
+                                    <action selector="didTouchAuthAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3X-cL-GUN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-R5-6Dz">
+                                <rect key="frame" x="186" y="472" width="42" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9ap-hT-vgv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-4e-0sQ">
+                                <rect key="frame" x="20" y="64" width="374" height="368.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="cpg-bg-OKR">
+                                <rect key="frame" x="20" y="64" width="20" height="20"/>
+                                <color key="color" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="k2c-4e-0sQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0Ib-Vb-jZU"/>
+                            <constraint firstItem="kjX-C1-Fef" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0cH-OG-OXk"/>
+                            <constraint firstItem="JVE-R5-6Dz" firstAttribute="top" secondItem="JU4-L8-vOf" secondAttribute="bottom" id="Evm-xL-9Ua"/>
+                            <constraint firstItem="JVE-R5-6Dz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LUj-5I-JEE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k2c-4e-0sQ" secondAttribute="trailing" constant="20" id="M16-aK-tM7"/>
+                            <constraint firstItem="cpg-bg-OKR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mtu-ni-Xn5"/>
+                            <constraint firstItem="kjX-C1-Fef" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bOy-GX-7yN"/>
+                            <constraint firstItem="cpg-bg-OKR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="imZ-i3-ogd"/>
+                            <constraint firstItem="kjX-C1-Fef" firstAttribute="top" secondItem="k2c-4e-0sQ" secondAttribute="bottom" constant="20" id="irs-Kr-jIK"/>
+                            <constraint firstItem="k2c-4e-0sQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="reL-Li-vND"/>
+                            <constraint firstItem="JU4-L8-vOf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tTi-UJ-4CN"/>
+                            <constraint firstItem="JU4-L8-vOf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vpH-fw-FgW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="authBtn" destination="JU4-L8-vOf" id="RNG-la-Cor"/>
+                        <outlet property="statusTextView" destination="k2c-4e-0sQ" id="9US-0I-hxW"/>
+                        <outlet property="typeLabel" destination="JVE-R5-6Dz" id="HV6-gp-RiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>

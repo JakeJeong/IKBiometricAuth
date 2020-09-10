@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1461AD472509B77D00957D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461AD462509B77D00957D25 /* AppDelegate.m */; };
+		1461AD4D2509B77D00957D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461AD4C2509B77D00957D25 /* ViewController.m */; };
+		1461AD502509B77D00957D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1461AD4E2509B77D00957D25 /* Main.storyboard */; };
+		1461AD522509B77E00957D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1461AD512509B77E00957D25 /* Assets.xcassets */; };
+		1461AD552509B77E00957D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1461AD532509B77E00957D25 /* LaunchScreen.storyboard */; };
+		1461AD582509B77E00957D25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461AD572509B77E00957D25 /* main.m */; };
+		1461AD622509B77E00957D25 /* IKBiometricSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461AD612509B77E00957D25 /* IKBiometricSampleTests.m */; };
+		1461AD6D2509B77E00957D25 /* IKBiometricSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1461AD6C2509B77E00957D25 /* IKBiometricSampleUITests.m */; };
+		1461ADB42509B9B100957D25 /* IKBiometricAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1461ADB32509B9B100957D25 /* IKBiometricAuth.framework */; };
+		1461ADB52509B9B100957D25 /* IKBiometricAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1461ADB32509B9B100957D25 /* IKBiometricAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1461AD5E2509B77E00957D25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1461AD3A2509B77D00957D25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1461AD412509B77D00957D25;
+			remoteInfo = IKBiometricSample;
+		};
+		1461AD692509B77E00957D25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1461AD3A2509B77D00957D25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1461AD412509B77D00957D25;
+			remoteInfo = IKBiometricSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1461ADB62509B9B200957D25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1461ADB52509B9B100957D25 /* IKBiometricAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1461AD422509B77D00957D25 /* IKBiometricSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKBiometricSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1461AD452509B77D00957D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1461AD462509B77D00957D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1461AD4B2509B77D00957D25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1461AD4C2509B77D00957D25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1461AD4F2509B77D00957D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1461AD512509B77E00957D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1461AD542509B77E00957D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1461AD562509B77E00957D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1461AD572509B77E00957D25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1461AD5D2509B77E00957D25 /* IKBiometricSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IKBiometricSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1461AD612509B77E00957D25 /* IKBiometricSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKBiometricSampleTests.m; sourceTree = "<group>"; };
+		1461AD632509B77E00957D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1461AD682509B77E00957D25 /* IKBiometricSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IKBiometricSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1461AD6C2509B77E00957D25 /* IKBiometricSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKBiometricSampleUITests.m; sourceTree = "<group>"; };
+		1461AD6E2509B77E00957D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1461ADB32509B9B100957D25 /* IKBiometricAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IKBiometricAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1461AD3F2509B77D00957D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461ADB42509B9B100957D25 /* IKBiometricAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1461AD5A2509B77E00957D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1461AD652509B77E00957D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1461AD392509B77D00957D25 = {
+			isa = PBXGroup;
+			children = (
+				1461AD442509B77D00957D25 /* IKBiometricSample */,
+				1461AD602509B77E00957D25 /* IKBiometricSampleTests */,
+				1461AD6B2509B77E00957D25 /* IKBiometricSampleUITests */,
+				1461AD432509B77D00957D25 /* Products */,
+				1461ADB22509B9B100957D25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1461AD432509B77D00957D25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1461AD422509B77D00957D25 /* IKBiometricSample.app */,
+				1461AD5D2509B77E00957D25 /* IKBiometricSampleTests.xctest */,
+				1461AD682509B77E00957D25 /* IKBiometricSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1461AD442509B77D00957D25 /* IKBiometricSample */ = {
+			isa = PBXGroup;
+			children = (
+				1461AD452509B77D00957D25 /* AppDelegate.h */,
+				1461AD462509B77D00957D25 /* AppDelegate.m */,
+				1461AD4B2509B77D00957D25 /* ViewController.h */,
+				1461AD4C2509B77D00957D25 /* ViewController.m */,
+				1461AD4E2509B77D00957D25 /* Main.storyboard */,
+				1461AD512509B77E00957D25 /* Assets.xcassets */,
+				1461AD532509B77E00957D25 /* LaunchScreen.storyboard */,
+				1461AD562509B77E00957D25 /* Info.plist */,
+				1461AD572509B77E00957D25 /* main.m */,
+			);
+			path = IKBiometricSample;
+			sourceTree = "<group>";
+		};
+		1461AD602509B77E00957D25 /* IKBiometricSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1461AD612509B77E00957D25 /* IKBiometricSampleTests.m */,
+				1461AD632509B77E00957D25 /* Info.plist */,
+			);
+			path = IKBiometricSampleTests;
+			sourceTree = "<group>";
+		};
+		1461AD6B2509B77E00957D25 /* IKBiometricSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1461AD6C2509B77E00957D25 /* IKBiometricSampleUITests.m */,
+				1461AD6E2509B77E00957D25 /* Info.plist */,
+			);
+			path = IKBiometricSampleUITests;
+			sourceTree = "<group>";
+		};
+		1461ADB22509B9B100957D25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1461ADB32509B9B100957D25 /* IKBiometricAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1461AD412509B77D00957D25 /* IKBiometricSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1461AD712509B77E00957D25 /* Build configuration list for PBXNativeTarget "IKBiometricSample" */;
+			buildPhases = (
+				1461AD3E2509B77D00957D25 /* Sources */,
+				1461AD3F2509B77D00957D25 /* Frameworks */,
+				1461AD402509B77D00957D25 /* Resources */,
+				1461ADB62509B9B200957D25 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IKBiometricSample;
+			productName = IKBiometricSample;
+			productReference = 1461AD422509B77D00957D25 /* IKBiometricSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1461AD5C2509B77E00957D25 /* IKBiometricSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1461AD742509B77E00957D25 /* Build configuration list for PBXNativeTarget "IKBiometricSampleTests" */;
+			buildPhases = (
+				1461AD592509B77E00957D25 /* Sources */,
+				1461AD5A2509B77E00957D25 /* Frameworks */,
+				1461AD5B2509B77E00957D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1461AD5F2509B77E00957D25 /* PBXTargetDependency */,
+			);
+			name = IKBiometricSampleTests;
+			productName = IKBiometricSampleTests;
+			productReference = 1461AD5D2509B77E00957D25 /* IKBiometricSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1461AD672509B77E00957D25 /* IKBiometricSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1461AD772509B77E00957D25 /* Build configuration list for PBXNativeTarget "IKBiometricSampleUITests" */;
+			buildPhases = (
+				1461AD642509B77E00957D25 /* Sources */,
+				1461AD652509B77E00957D25 /* Frameworks */,
+				1461AD662509B77E00957D25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1461AD6A2509B77E00957D25 /* PBXTargetDependency */,
+			);
+			name = IKBiometricSampleUITests;
+			productName = IKBiometricSampleUITests;
+			productReference = 1461AD682509B77E00957D25 /* IKBiometricSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1461AD3A2509B77D00957D25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = jakejeong;
+				TargetAttributes = {
+					1461AD412509B77D00957D25 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					1461AD5C2509B77E00957D25 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1461AD412509B77D00957D25;
+					};
+					1461AD672509B77E00957D25 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1461AD412509B77D00957D25;
+					};
+				};
+			};
+			buildConfigurationList = 1461AD3D2509B77D00957D25 /* Build configuration list for PBXProject "IKBiometricSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1461AD392509B77D00957D25;
+			productRefGroup = 1461AD432509B77D00957D25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1461AD412509B77D00957D25 /* IKBiometricSample */,
+				1461AD5C2509B77E00957D25 /* IKBiometricSampleTests */,
+				1461AD672509B77E00957D25 /* IKBiometricSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1461AD402509B77D00957D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461AD552509B77E00957D25 /* LaunchScreen.storyboard in Resources */,
+				1461AD522509B77E00957D25 /* Assets.xcassets in Resources */,
+				1461AD502509B77D00957D25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1461AD5B2509B77E00957D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1461AD662509B77E00957D25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1461AD3E2509B77D00957D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461AD4D2509B77D00957D25 /* ViewController.m in Sources */,
+				1461AD472509B77D00957D25 /* AppDelegate.m in Sources */,
+				1461AD582509B77E00957D25 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1461AD592509B77E00957D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461AD622509B77E00957D25 /* IKBiometricSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1461AD642509B77E00957D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461AD6D2509B77E00957D25 /* IKBiometricSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1461AD5F2509B77E00957D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1461AD412509B77D00957D25 /* IKBiometricSample */;
+			targetProxy = 1461AD5E2509B77E00957D25 /* PBXContainerItemProxy */;
+		};
+		1461AD6A2509B77E00957D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1461AD412509B77D00957D25 /* IKBiometricSample */;
+			targetProxy = 1461AD692509B77E00957D25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1461AD4E2509B77D00957D25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1461AD4F2509B77D00957D25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1461AD532509B77E00957D25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1461AD542509B77E00957D25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1461AD6F2509B77E00957D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1461AD702509B77E00957D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1461AD722509B77E00957D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C86MGS2A3T;
+				INFOPLIST_FILE = IKBiometricSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakejeong.IKBiometricSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1461AD732509B77E00957D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C86MGS2A3T;
+				INFOPLIST_FILE = IKBiometricSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakejeong.IKBiometricSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1461AD752509B77E00957D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NMZJ9XB85;
+				INFOPLIST_FILE = IKBiometricSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakejeong.IKBiometricSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKBiometricSample.app/IKBiometricSample";
+			};
+			name = Debug;
+		};
+		1461AD762509B77E00957D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NMZJ9XB85;
+				INFOPLIST_FILE = IKBiometricSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakejeong.IKBiometricSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKBiometricSample.app/IKBiometricSample";
+			};
+			name = Release;
+		};
+		1461AD782509B77E00957D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NMZJ9XB85;
+				INFOPLIST_FILE = IKBiometricSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakejeong.IKBiometricSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IKBiometricSample;
+			};
+			name = Debug;
+		};
+		1461AD792509B77E00957D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7NMZJ9XB85;
+				INFOPLIST_FILE = IKBiometricSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jakejeong.IKBiometricSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IKBiometricSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1461AD3D2509B77D00957D25 /* Build configuration list for PBXProject "IKBiometricSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1461AD6F2509B77E00957D25 /* Debug */,
+				1461AD702509B77E00957D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1461AD712509B77E00957D25 /* Build configuration list for PBXNativeTarget "IKBiometricSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1461AD722509B77E00957D25 /* Debug */,
+				1461AD732509B77E00957D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1461AD742509B77E00957D25 /* Build configuration list for PBXNativeTarget "IKBiometricSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1461AD752509B77E00957D25 /* Debug */,
+				1461AD762509B77E00957D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1461AD772509B77E00957D25 /* Build configuration list for PBXNativeTarget "IKBiometricSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1461AD782509B77E00957D25 /* Debug */,
+				1461AD792509B77E00957D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1461AD3A2509B77D00957D25 /* Project object */;
+}
