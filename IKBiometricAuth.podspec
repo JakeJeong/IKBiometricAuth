@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                          }
     s.author           = { "Jake Jeong" => "jikturbo@gmail.com" }
     s.social_media_url = "https://facebook.com/inkyu.jeong.5"
-    s.platform         = :ios, "8.0"
+    s.platform         = :ios, "9.0"
     s.source           = {
                             :git => "https://github.com/JakeJeong/IKBiometricAuth.git",
                             :tag => "v1.0.1"
