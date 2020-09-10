@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
     s.name             = "IKBiometricAuth"
     s.version          = "1.0.1"
-    s.summary          = "BFKit is a collection of useful classes to develop Apps faster"
+    s.summary          = "We made it easy to use the biometric authentication function."
     s.homepage         = "https://github.com/JakeJeong/IKBiometricAuth"
     s.screenshots      = ""
     s.license          = {
