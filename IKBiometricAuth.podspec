@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                             :git => "https://github.com/JakeJeong/IKBiometricAuth.git",
                             :tag => "v1.0.1"
                          }
-    s.source_files     = "Source/**/*.{h,m}"
+    s.source_files     = "Source/*.{h,m}"
     s.weak_frameworks  = 'LocalAuthentication'
     s.requires_arc     = true
   end
