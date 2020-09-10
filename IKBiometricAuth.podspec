@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
     s.source_files     = "Source/*.{h,m}"
     s.weak_frameworks  = 'LocalAuthentication'
     s.requires_arc     = true
+    s.ios.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.jakejeong.IKBiometricAuth' }
   end
