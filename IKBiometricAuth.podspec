@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.platform         = :ios, "9.0"
     s.source           = {
                             :git => "https://github.com/JakeJeong/IKBiometricAuth.git",
-                            :tag => "v1.0.1"
+                            :tag => "v1.0.2"
                          }
     s.source_files     = "Source/*.{h,m}"
     s.weak_frameworks  = 'LocalAuthentication'
