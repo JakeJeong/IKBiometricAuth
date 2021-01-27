@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, IKBiometricAuthResultType) {
-    AuthenticationNotReady = -1,
+    AuthenticationNotReady = -999,
     AuthenticationSuccess = 99999,
     AuthenticationFailed = kLAErrorAuthenticationFailed,
     UserCancel = kLAErrorUserCancel,

@@ -20,19 +20,35 @@
         }
         __block IKBiometricAuthResult * biometricResult;
         NSError *error = nil;
-        if ([context canEvaluatePolicy:[[self class] biometricToLAPolicy:authType] error:&error]) {
-            void(^replyAuth)(BOOL,NSError*) = ^(BOOL success,NSError* error) {
+        void(^replyPasscodeAuth)(BOOL,NSError*) = ^(BOOL success,NSError* error) {
+            if (success) {
+                biometricResult = IKBiometricAuthResult.resultSuccess();
+            } else {
+                biometricResult = IKBiometricAuthResult.result(error);
+            }
+            dispatch_semaphore_signal(semaphore);
+        };
+        void(^replyAuth)(BOOL,NSError*) = ^(BOOL success,NSError* error) {
+            if (error.code == kLAErrorBiometryLockout || error.code == kLAErrorUserFallback) {
+                [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:reason reply:replyPasscodeAuth];
+            } else {
                 if (success) {
                     biometricResult = IKBiometricAuthResult.resultSuccess();
                 } else {
                     biometricResult = IKBiometricAuthResult.result(error);
                 }
                 dispatch_semaphore_signal(semaphore);
-            };
+            }
+        };
+        if ([context canEvaluatePolicy:[[self class] biometricToLAPolicy:authType] error:&error]) {
             [context evaluatePolicy:[[self class] biometricToLAPolicy:authType] localizedReason:reason reply:replyAuth];
         } else {
-            biometricResult = IKBiometricAuthResult.result(error);
-            dispatch_semaphore_signal(semaphore);
+            if (error.code == kLAErrorBiometryLockout || error.code == kLAErrorUserFallback) {
+                [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:reason reply:replyPasscodeAuth];
+            } else {
+                biometricResult = IKBiometricAuthResult.result(error);
+                dispatch_semaphore_signal(semaphore);
+            }
         }
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         return biometricResult;
